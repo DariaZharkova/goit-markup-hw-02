@@ -46,8 +46,8 @@
   color: var(--dark-color);
 }
 
-.header-link :hover,
-.header-link :focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--pressed-state-color);
   text-decoration: underline;
 }
