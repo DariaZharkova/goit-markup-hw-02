@@ -1,26 +1,42 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dark-color: #2e2f42;
+  --text-color: #434455;
+  --whight-color: #ffffff;
+  --light-color: #f4f4fd;
+  --accent-color: #e7e9fc;
+}
+
 .body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  background-color: var(--whight-color);
 }
 
 .list {
   list-style: none;
 }
 
-/* Header styles */
-
-.link-logo {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;
-  text-transform: uppercase;
+.link {
   text-decoration: none;
 }
+
+/* Header styles */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-brand-color);
+  text-transform: uppercase;
+}
+
 .span-header {
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .nav .link {
@@ -28,13 +44,12 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-decoration: none;
+  color: var(--dark-color);
 }
 
 .nav .link:hover,
 .nav .link:focus {
-  color: #404bbf;
+  color: var(--pressed-state-color);
   text-decoration: underline;
 }
 
@@ -44,53 +59,57 @@
   letter-spacing: 0.02em;
   color: currentColor;
   text-decoration: none;
+  font-style: normal;
 }
 
 .address .link:hover,
 .address .link:focus {
-  color: #404bbf;
+  color: var(--pressed-state-color);
 }
 
 /* Styles page main content */
 /* Styles Hero */
+
 .section-hero {
-  background-color: #2e2f42;
+  background-color: var(--dark-color);
 }
 
 .hero-title {
   font-size: 56px;
   font-weight: 700;
-  line-height: 1.071;
+  line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--whight-color);
+  text-align: center;
 }
 
 .hero-button {
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--whight-color);
   cursor: pointer;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand-color);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
 }
 
 /* Styles Features */
-.features-title {
+/* .features-title {
   display: none;
-}
+} */
 
 .features-subtitle {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .features-text {
@@ -103,21 +122,30 @@
 .works-title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 /* Styles Team */
 .section-team {
-  background-color: #f4f4fd;
+  background-color: var(--light-color);
 }
+
+.team-card-item {
+  background-color: var(--whight-color);
+}
+
 .team-title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .team-subtitle {
@@ -125,7 +153,7 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .team-text {
@@ -137,24 +165,25 @@
 /* Styles portfolio main content */
 /* Styles Filters */
 
-.portfolio-title {
+/* .portfolio-title {
   display: none;
-}
+} */
 
 .filters {
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #e7e9fc;
+  color: var(--primary-brand-color);
+  background-color: var(--light-color);
   cursor: pointer;
 }
 
 .filters:hover,
 .filters:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--whight-color);
+  background-color: var(--pressed-state-color);
 }
 
 .projects-title {
@@ -162,7 +191,7 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .projects-text {
@@ -174,16 +203,16 @@
 /* Styles Footer */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--dark-color);
 }
 
 .span-footer {
-  color: #f4f4fd;
+  color: var(--light-color);
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light-color);
 }
