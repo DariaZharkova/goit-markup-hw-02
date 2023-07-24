@@ -6,7 +6,6 @@
   --text-color: #434455;
   --whight-color: #ffffff;
   --light-color: #f4f4fd;
-  --accent-color: #e7e9fc;
 }
 
 .body {
@@ -27,12 +26,12 @@
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
   font-weight: 800;
+  font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--primary-brand-color);
   text-transform: uppercase;
+  color: var(--primary-brand-color);
 }
 
 .span-header {
@@ -53,13 +52,15 @@
   text-decoration: underline;
 }
 
+.address {
+  font-style: normal;
+}
+
 .address .link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: currentColor;
-  text-decoration: none;
-  font-style: normal;
 }
 
 .address .link:hover,
@@ -198,6 +199,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 /* Styles Footer */
